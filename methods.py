@@ -85,22 +85,140 @@ import math,random
 # op=statement.find("easy")
 # print(op)
 
-skills=["python-eAsy",
-        "java-difficult",
-        "js-easY",
-        "react-Easy",
-        "html-EASY",
-        "git-moderate"]
+# skills=["python-eAsy",
+#         "java-difficult",
+#         "js-easY",
+#         "react-Easy",
+#         "html-EASY",
+#         "git-moderate"]
 
 
 
-skills=["python-eAsy   ",
-        "java-difficult",
-        "   easY-js",
-        "react-Easy   ",
-        "   EASY-html",
-        "git-moderate"]
+# skills=["python-eAsy   ",
+#         "java-difficult",
+#         "   easY-js",
+#         "react-Easy   ",
+#         "   EASY-html",
+#         "git-moderate"]
 
 # print the strings which are having easy as a substring 
 
 #lower(),strip(),find()
+#rfind() is used to last occurance of the character in a string.
+
+# str="welcome hello"
+# op=str.rfind("e")
+# print(op)
+
+# str="pyrthtonysq"
+# op=str.rfind("t",3,6)
+# print(op)
+
+#in find,rfind and index, we have additional two parameters-->
+# start and (end-1) points for searching.
+
+# op1=str.count("y",4,10)
+# # print(op1)
+
+# st_name="53r-karthik"
+# op2=st_name.startswith("45r")
+# print(op2)
+
+# list_of_students=["45r-karthik","45r-alekya","45r-harish","45r-anusha","53r-sukumar","53r-sandhya","53r-suresh"]
+
+# print("45r-students list")
+# for student in list_of_students:
+#     if(student.startswith("45r")):
+#         print(student)
+
+# print("53r-students list")
+
+# for stud in list_of_students:
+#     if(stud.startswith("53r")):
+#         print(stud)
+
+
+
+# str="alpha123betic"
+
+# op=str.isalpha() # returns true if all are alphabetes
+# print(op)
+
+# str1="1234"
+# op1=str1.isdigit() #returns true if all are numeric values
+# print(op1)
+
+
+# str2="abc123"
+# op2=str2.isalnum() #returns true if contains both numeric and alphabetic
+# print(op2)
+
+# list1=[1,2,3,4,5]
+
+# list1.append(6)
+# print(list1) #updated list by adding 6 at the end of the list.
+
+# ip=["123","456","abc","a12b","xyz456","xyz"]
+# digit=[]
+# alpha=[]
+# alnum=[]
+# for i in ip:
+#     if(i.isdigit()):
+#         digit.append(i)
+#     elif(i.isalpha()):
+#         alpha.append(i)
+#     else:
+#         alnum.append(i)
+# print(f"digit={digit}")
+# print(f"alpha={alpha}")
+# print(f"alnum={alnum}")
+
+
+# # str="hHllo"
+# str="Hello World"
+# #op=str.islower()
+# # op=str.isupper()
+# # op=str.istitle()
+
+# print(op)
+
+
+#split is used to split the characters by seperator from a string and insert into a list.
+
+# str="s-o-m-e"
+# op=str.split("-")
+# print(op)
+
+# str1="s_o_m_e_t_hing"
+# op1=str1.split("_",3)
+# print(op1)
+
+# str1="some*thin_h_k_*k"
+# op1=str1.split("_")
+# print(op1)
+
+# studs="kiran*kumar*vikky*shiva*naresh*shafi"
+# op2=studs.split("*")
+# op2=studs.split("*",3)
+# op1=studs.split("*",3)
+# op2=studs.rsplit("*",3)
+# print(op1,"left split")
+# print(op2,"right split")
+
+# ["kiran","kumar","vikky","shiva","naresh","shafi"]
+
+# mul_str="""hello
+# 45r
+# welcome"""
+# op_mul=mul_str.splitlines()
+# print(op_mul)
+
+# seq={"js","python","sql"}
+# op="HELLO".join(seq)
+# print(op)
+
+# str="hello {name} welcome to {city}"
+# op=str.format(name="john",city="hyd")
+# op1=str.format(name="harish",city="bnglr")
+# print(op)
+# print(op1)
