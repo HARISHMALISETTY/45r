@@ -1,4 +1,4 @@
-import math,random
+import math,random,copy
 
 # x=-5.25
 # op=math.trunc(x)
@@ -222,3 +222,92 @@ import math,random
 # op1=str.format(name="harish",city="bnglr")
 # print(op)
 # print(op1)
+
+# op="hello {1} welcome to {0} after {2} years".format("sai","hyd",5)
+
+# op="hello {name} welcome to {city} after {gap} years".format(name="sai",city="hyd",gap=5)
+# print(op)
+
+#list methods
+
+# ip=[1,2,3]
+# ip.append({"name":"harish","city":"hyd"})
+# print(ip)
+# ip.append(4) #adding sinle element at the end of the list
+# ip.append(4,6,8,9) #this cant possible in append
+#using append we can add single num/string/list/tuple/set/dictionary into existing list.
+
+# op=ip.append(5) #append will not return anything, it will just add a new element at the end of the list.
+# print(op)
+
+# op=ip.extend((4,5,6)) #this will allows
+# ip.extend(4) #it wont allows in extend
+# print(ip)
+
+#we can add multiple elements at a time into the existing list by passing elements in the form of list/tuples.
+#extend method doesn't return anything. it will just add elements.
+#we can use list/tuples/sets/dictionaries as a argument for the extend
+
+# skills=["html","css","js","python","react"]
+# # op=skills.insert(2,"django")
+# # skills.insert(2,"django","aws") #it wont take more than 2 arguements\
+# skills.insert(2,["aws","angular"])
+
+# print(skills)
+# print(op)
+#with the help of index, we can add the element at particular index without removing/replacing existing ones
+#insert method will modify existing list but does not returns anything.
+
+# ip=[1,2,3,3,2,1]
+# op=ip.remove(1) 
+# #it will remove only first match of the argument and doesn't returns anything
+# print(op)
+
+
+# ip=[1,5,7,6,4,8,1,2]
+# op=ip.pop(2)
+#this will removes the elements based on the index we passes as a arguement.and return the popped out element
+# ip.pop(-2) #if we didnt mention index in argument , it will automatically removes last element from the list
+# # print(ip)
+# op=ip.clear() #clear all the items from the list and return nothing.
+# print(op)
+# op=ip.index(8,1,4)
+#index method will search for the element in the list. if the element available then returns the index of the value
+# otherwise throw an error
+#additinally we cam also pass starting and ending positions for searching
+# print(op)
+
+# op=ip.count(1)
+# print(op)
+
+nums=[45,34,12,13,19,49]
+# op=nums.sort() #it will do ascending
+# nums.sort(reverse=True) #it will do descending
+# print(nums)
+
+#sort method will modifies existing list by sorting the elements in ascending order.and it doesn't returns anything
+# fruits=["banana","apple","pineapple","watermelon"]
+# fruits.sort()
+# print(fruits)
+nums.reverse() #it will just reverse the list
+# print(nums)
+
+#shallow copy and deep copy.
+# ip1=[[1,2],[5,6]]
+# ip2=ip1.copy()
+
+
+# ip2[0][1]="hi"
+
+# print(ip1,ip2)
+
+# ip1=[["hi","hello"],["js","python"]]
+# ip2=copy.deepcopy(ip1)
+
+# ip2[0][1]="bye"
+
+# print(ip1,ip2)
+
+list1=[1,2,3,[4,5,6,["hi"]]]
+print(list1[3][3][0])
+
