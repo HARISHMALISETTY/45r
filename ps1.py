@@ -56,10 +56,10 @@
 #     print("num is not palindrome")
 
 
-ip=567
-count=0
-while ip>0:
-    ld=ip%10
-    count+=ld
-    ip=ip//10
-print(count)
+# ip=567
+# count=0
+# while ip>0:
+#     ld=ip%10
+#     count+=ld
+#     ip=ip//10
+# print(count)
