@@ -65,35 +65,41 @@
 #sum of cubes of each digit in a num
 # num=154
 # cubes=0
+# # while(num>0):
+# #     ld=num%10
+# #     cubes+=ld**3
+# #     num=num//10
+# # print(cubes)
+
+# #armstrong num
+
+# # 153=1x1x1 +5x5x5 +3x3x3
+
+# # 12345=1(5)+2(5)+3(5)+4(5)+5(5)
+
+# num=153
+# num1=num
+# orgnl=num
+# # length=len(str(num))
+# length=0
+# while(num1>0):
+#     ld=num%10
+#     length+=1
+#     num1=num1//10
+# sum=0
 # while(num>0):
 #     ld=num%10
-#     cubes+=ld**3
+#     sum+=ld**length
 #     num=num//10
-# print(cubes)
+# print(sum)
 
-#armstrong num
+# if(sum==orgnl):
+#     print(f"{orgnl} is armstrong num")
+# else:
+#     print(f"{orgnl} is not a armstrong num")
 
-# 153=1x1x1 +5x5x5 +3x3x3
 
-# 12345=1(5)+2(5)+3(5)+4(5)+5(5)
 
-num=153
-orgnl=num
-length=len(str(num))
-sum=0
-while(num>0):
-    ld=num%10
-    sum+=ld**length
-    num=num//10
-print(sum)
-
-if(sum==orgnl):
-    print(f"{orgnl} is armstrong num")
-else:
-    print(f"{orgnl} is not a armstrong num")
-
-#find maximum num in the given list
-list=[4,7,1,2,8,9,10,1,3]
 
 
 
