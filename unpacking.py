@@ -142,8 +142,22 @@ def factorial(num):
         fact=fact*x
     return fact #returns factorial of 1,2,3,4,5
 
-def perfect_num():
-    return True
-    
-op=[factorial(i) for i in range(1,6) if(perfect_num())]
-print(op)
+# def perfect_num(num):
+#     # print(num)
+#     sum=0
+#     for x in range(1,num):
+#         if(num%x==0):
+#             sum+=x
+#     if(sum==num):
+#         return True
+#     else:
+#         return False
+
+# op={i:factorial(i) for i in range(1,5)}
+
+# print(op)
+
+
+# 1.iteration 
+# 2.filteration 
+# 3.operation
