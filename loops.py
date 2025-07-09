@@ -148,7 +148,7 @@
 #     day+=1 #mention how to update
 # print(day)
 
-x=["html","css","js","react","python","django"]
+# x=["html","css","js","react","python","django"]
 # i=0
 # while(i<len(x)):
 #     print(x[i])

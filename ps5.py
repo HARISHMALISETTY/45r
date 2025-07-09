@@ -38,12 +38,12 @@
 
 
 #find the factors for given num
-num=28
-sum=0
-for x in range(1,num):
-    if(num%x==0):
-        sum+=x
-if(sum==num):
-    print(f"{num} is a perfect number")
-else:
-    print(f"{num} is not a perfect number")
+# num=28
+# sum=0
+# for x in range(1,num):
+#     if(num%x==0):
+#         sum+=x
+# if(sum==num):
+#     print(f"{num} is a perfect number")
+# else:
+    # print(f"{num} is not a perfect number")
