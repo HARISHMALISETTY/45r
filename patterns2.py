@@ -69,3 +69,21 @@ for x in range(5,0,-1):
 # 2-->5*10+4=row=54
 # 3-->54*10+3=row=543
 
+# abcde
+# abcd
+# abc
+# ab
+# a 
+
+# aaaaa
+# bbbb
+# ccc
+# dd 
+# e 
+
+# eeeee 
+# dddd 
+# ccc 
+# bb 
+# a 
+
